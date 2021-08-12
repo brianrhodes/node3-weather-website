@@ -16,12 +16,8 @@ weatherForm.addEventListener('submit', (e) => {
             if(data.error) {
                 messageOne.textContent = 'Error: ' + data.error
             } else {
-                if(location === 'montreal')
-                    messageOne.textContent = "Who gives a fuck"
-                else {
-                    messageOne.textContent = data.location
-                    messageTwo.textContent = data.forecast    
-                }
+                messageOne.textContent = data.location
+                messageTwo.textContent = data.forecast    
              }
         })
     })
